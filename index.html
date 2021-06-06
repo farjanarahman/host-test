@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Travellers</title>
+</head>
+<body data-target="#my-navbar">
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-pink fixed-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                   <i class="fas fa-plane-departure"></i> Travellers</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="nav-menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse"  id="nav-menu">
+                    <ul id="myUl" class="navbar-nav ml-auto">
+                        <li class="nav-item px-2">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="#history-culture" class="nav-link">History & Culture</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="#popular-places" class="nav-link">Popular Places</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="#service" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="#hotel" class="nav-link">Hotels</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="#gallery" class="nav-link">Photo-Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- End of navbar -->
+    <!-- Hero Image -->
+    <div id="home">
+    <section class="hero">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row main-text align-items-center">
+            <div class="col-lg-7 col-md-6">
+                <div class="text">
+                     <h1 class="mb-4 text-capatalize  text-center"><i>Explore</i><br>
+                       <i>Dream</i><br>
+                       <i>Discover</i>
+                    </h1>
+                    <p style="font-size: 20px;">
+                        Travelling is not something you're good at. It's something you, like breathing.
+                        <br>
+                        Without all of the distractions of the city, nature provides an opportunity for you to hear and reconnect with your thoughts.
+                        <span id="vl">.....</span>
+                        <span id="view-all"> In our day-to-day lives, there are a million distractions from your phone ringing and the 'ping' of your email inbox, to background noise from the TV or radio. It can feel impossible to concentrate on the task at hand when you are constantly being interrupted.
+       
+                               When surrounded by nature, all of those distractions disappear as the number of stimuli are reduced. You find yourself brought into the present moment and able to pay attention to the sights and scents in front of you. With this mindful attitude, it's much easier to process your thoughts and feelings and take the time to reflect.</span>
+                   </p>
+                   <button type="button" id="view" onclick="view()" class="btn btn-hero py-2 px-3">View All</button>
+                   <script type="text/javascript">
+                       var i= 0;
+                    function view(){
+                        if(!i){
+                            document.getElementById("view-all").style.
+                            display ="inline";
+                            document.getElementById("vl").style.
+                            display ="none";
+                            document.getElementById("view").innerHTML ="View Less";
+                            i=1;
+                        }
+                       else {
+                            document.getElementById("view-all").style.
+                            display ="none";
+                            document.getElementById("vl").style.
+                            display ="inline";
+                            document.getElementById("view").innerHTML =" View All";
+                            i=0;
+                        }
+                    }
+                    </script>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>>
+
+    </section>
+    <!-- End of Hero Image -->
+    <!-- about section -->
+    <div id="about">
+    <section class="about-section mt-5 ">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center heading-section mb-5">
+                <h2 class="text-black  text-uppercase  mb-2">Welcome to Travellers</h2>
+                <p style="font-weight: bold; font-size: 20px;">We are here to bring comfort to your traveling. Our first priority is your security, safe traveling, and your pleasure. Sitting in your place comfort zone you can book hotels, restaurants and resorts. We make sure that you always have an amazing journey. Your satisfaction is our achievement!</p>
+            </div>
+        </div>
+        <!-- History -->
+        <div id="history-culture">
+        <div class="row mb-5">
+           <div class="col-12">
+               <div class="row">
+                   <div class="mb-4 col-lg-6">
+                       <img src="img/history.jpg" alt="" class="img-box">
+                   </div>
+                   <div class="col-lg-5 ml-auto text-lg-left align-self-center">
+                       <h2 class="text-black">History</h2>
+                       <p class="mb-4">In <b>1995</b>, the Government of Bangladesh declared Sylhet as the sixth divisional headquarters of the country.Sylhet has played a vital role in the Bangladeshi economy. <span id="dots">....</span><span id="more"> of Bangladesh's finance ministers have been Members of Parliament from the city of Sylhet.<i><b>Badar Uddin Ahmed Kamran</b></i> was a longtime mayor of Sylhet.<i><b> Humayun Rashid Choudhury</b></i> , a diplomat from Sylhet, served as President of the UN General Assembly and Speaker of the Bangladesh National Parliament.In <b>2001</b>, the municipality was upgraded to the Sylhet City Corporation. It was made a metropolitan city in<b>2009</b>.</span> </p>
+                       <button type="button" id="read" onclick="read()" class="btn btn-about" >Read more</button>
+                       <script type="text/javascript">
+                       var i= 0;
+                    function read(){
+                        if(!i){
+                            document.getElementById("more").style.
+                            display ="inline";
+                            document.getElementById("dots").style.
+                            display ="none";
+                            document.getElementById("read").innerHTML =" Read Less";
+                            i=1;
+                        }
+                       else {
+                            document.getElementById("more").style.
+                            display ="none";
+                            document.getElementById("dots").style.
+                            display ="inline";
+                            document.getElementById("read").innerHTML =" Read More";
+                            i=0;
+                        }
+                    }
+                    </script>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+    <!-- ------ -->
+        <!-- Culture -->
+             <div class="row mb-5">
+               <div class="col-12">
+                   <div class="row">
+                       <div class="mb-4 col-lg-6 order-lg-2">
+                           <img src="img/culture.jpg" alt="" class="img-box">
+                       </div>
+                       <div class="col-lg-5 mr-auto text-lg-right  align-self-center">
+                           <h2 class="text-black">Culture</h2>
+                           <p class="mb-4">Sylheti culture comprises its cuisine, literature, language, songs, tradition etc. Other than Sylhetis, there are also people of<span id="dotted">....</span><span id="read-more"> <b><i>Manipuri, Patra, Khasi, Chakma, tripuri and Santal</i></b> ethnic groups in Sylhet. As a result, the language, history, heritage and culture of the region is quite diverse and rich. Sylheti culture is comparatively enriched with non-Aryan elements than Vedic features.The influence of Assam on the language and culture of Sylhet is noticeable as it was formerly<b><i> a part of the State of Assam</i></b>. It is said that after the Brahman War, the Manipuris came to Srihatta and Kachar and performed a dance called <b><i>Lai offering God</i></b>. Which is included in the ancient culture of this region. Later, dialectal Sanskrit was integrated into the ancient culture with the arrival of <b><i>Arab, Turkish, Persian</i></b> and other colonists including Aryans.
+                           </p></span>,
+                        <button type="button" id="reader" onclick="reader()" class="btn btn-about2" >Read more</button>
+                       <script type="text/javascript">
+                       var i= 0;
+                    function reader(){
+                        if(!i){
+                            document.getElementById("read-more").style.
+                            display ="inline";
+                            document.getElementById("dotted").style.
+                            display ="none";
+                            document.getElementById("reader").innerHTML =" Read Less";
+                            i=1;
+                        }
+                       else {
+                            document.getElementById("read-more").style.
+                            display ="none";
+                            document.getElementById("dotted").style.
+                            display ="inline";
+                            document.getElementById("reader").innerHTML =" Read More";
+                            i=0;
+                        }
+                    }
+                    </script>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!-- ---- -->
+</section>
+    </div>
+<!-- end of About section -->
+ <!-- popular places -->
+ <div id="popular-places">
+ <section>
+    <div class="popular mt-5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="text-center">
+                        <h1 class="text-white">Popular Places</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------- -->
+    <div class="all-image">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-6">
+                    <div class="single-img">
+                        <div class="img-thumb">
+                            <img src="img/image-6.jpg" alt="">
+                        </div>
+                        <div class="img-hover">
+                            <div class="title">
+                                 <h3>Tanguar Haor </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- ------- -->
+                 <div class="col-xl-6 col-md-6">
+                   <div class="single-img">
+                       <div class="img-thumb">
+                           <img src="img/image-2.jpg" alt="">
+                       </div>
+                       <div class="img-hover">
+                           <div class="title">
+                               <h3>Ratargul Swamp Forest</h3>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!-- ----------- -->
+               <div class="col-xl-4 col-md-12 col-lg-4">
+                   <div class="single-img">
+                       <div class="img-thumb">
+                           <img src="img/image-3.jpg" alt="">
+                       </div>
+                       <div class="img-hover">
+                           <div class="title">
+                               <h3>Lawachara</h3>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!-- ----------- -->
+               <div class="col-xl-4 col-md-12 col-lg-4">
+                   <div class="single-img">
+                       <div class="img-thumb">
+                           <img src="img/image-5.jpg" alt="">
+                       </div>
+                       <div class="img-hover">
+                           <div class="title">
+                               <h3>Shimulbagan</h3>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!-- ----------- -->
+               <div class="col-xl-4 col-md-12 col-lg-4">
+                   <div class="single-img">
+                       <div class="img-thumb">
+                           <img src="img/image-4.jpg" alt="">
+                       </div>
+                       <div class="img-hover">
+                           <div class="title">
+                               <h3>Tea Garden, Sreemangal</h3>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!-- ----------- -->
+               <div class="col-xl-5 col-md-5">
+                   <div class="single-img">
+                       <div class="img-thumb">
+                           <img src="img/image-1.jpg" alt="">
+                       </div>
+                       <div class="img-hover">
+                           <div class="title">
+                               <h3>Jaflong</h3>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+                <!-- ------- -->
+                <div class="col-xl-7 col-md-7">
+                  <div class="single-img">
+                      <div class="img-thumb">
+                          <img src="img/image-7.jpg" alt="">
+                      </div>
+                      <div class="img-hover">
+                          <div class="title">
+                              <h3>Sada Pathor</h3>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- ----------- -->
+            </div>
+        </div>
+       </div>
+</section>
+ </div>
+<!-- End of popular places -->
+<!-- Social icon -->
+<section class="p-3 bg-light text-black text-center" id="social-icons">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Follow Travellers</h1>
+                    <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook facebook"></i></a>
+                     <a href="https://www.twitter.com/" target="blank"><i class="fab fa-twitter twitter"></i></a>
+                     <a href="https://www.instagram.com/"  target="blank"><i class="fab fa-instagram instagram"></i></a>
+                     <!-- <a href="https://plus.google.com/" target="blank"><i class="fab fa-google-plus plus"></i></a> -->
+                     <a href="https://www.pinterest.com/"  target="blank"><i class="fab fa-pinterest plus"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+      <!--End of Social icon -->
+        <!-- our services -->
+        <div class="my-5" id="service">
+            <div class="text-center my-4">
+                <h1>Our Services</h1>
+            </div>
+            <div class="service-overlay text-center py-4">
+                <h2 style="color: white;"><b>Why Choose Us ?</b></h2>
+                <div class="row container services m-auto py-3">
+                              <!----->
+                                <div class="col-md-3 d-flex  align-items-stretch mt-4 ml-auto">
+                                    <div class="icon-box blue">
+                                        <div class="icon">
+                                            <i class="fas fa-drumstick-bite"></i>
+                                        </div>
+                                        <h4 class="text-white">Good Food</h4>
+                                        <p>Food brings people together on many different levels. It’s nourishment of the soul and body; it’s truly love
+                                        </p>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="col-md-3 d-flex align-items-stretch mt-4 ml-auto">
+                                    <div class="icon-box yellow">
+                                        <div class="icon">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                        <h4 class="text-white">Resorts</h4>
+                                        <p>All Journeys Have Secret Destinations of Which the Traveler is Unaware</p>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="col-md-3 d-flex align-items-stretch mt-4 ml-auto">
+                                    <div class="icon-box blue">
+                                        <div class="icon">
+                                            <i class="fas fa-hotel"></i>
+                                        </div>
+                                        <h4 class="text-white">Hotels</h4>
+                                        <p>When you get into a hotel room, you lock the door, and you know there is a secrecy, there is a luxury, there is fantasy. There is comfort. There is reassurance.</p>
+                                    </div>
+                                </div>
+                                <!---->
+                             <div class="col-md-3 d-flex align-items-stretch mt-4 ml-auto">
+                                    <div class="icon-box yellow">
+                                        <div class="icon">
+                                            <i class="fas fa-cocktail"></i>
+                                        </div>
+                                        <h4 class="text-white">Restaurant</h4>
+                                        <p>Laughter is brightest, where food is best</p>
+                                    </div>
+                                </div>
+                                 <!---->
+                             </div>
+                             </div>
+        <!-- End of Service Section -->
+        <!--- Hotels Section-->
+    <section class="mt-2">
+        <div class="hotels py-5" id="hotel">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section-title text-center mb-70">
+                            <h3 class="text-uppercase text-center">Hotels</h3>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis laboriosam totam animi nesciunt cum voluptates.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-htl">
+                            <div class="thumb">
+                                <img src="img/starpacific.jpg"class="img-fluid"alt="">
+                                <i class="price">££££</i>
+                            </div>
+                            <div class="htl-info p-3">
+                                <a href="https://www.hotelstarpacific.com/" target="blank">
+                                    <h3>Hotel Star Pacific</h3>
+                                </a>
+                                <div class="rating d-flex  justify-content-between">
+                              <span class="d-flex justify-content-center align-items-center">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                  <i class="far fa-star"></i>
+                                  <a><b>(3.1/5)</b></a>
+                              </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-htl">
+                            <div class="thumb">
+                                <img src="img/valley.jpg"class="img-fluid"alt="">
+                                <i class="price">£££</i>
+                            </div>
+                            <div class="htl-info p-3">
+                                <a href="https://www.hotelvalleygarden.com/" target="_blank">
+                                    <h3>Hotel Valley Garden</h3>
+                                </a>
+                                <div class="rating d-flex justify-content-between">
+                              <span class="d-flex justify-content-center align-items-center">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                  <a><b>(4.2/5)</b></a>
+                              </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-htl">
+                            <div class="thumb">
+                                <img src="img/grandhtl.jpg"class="img-fluid"alt="">
+                                <i class="price">£££</i>
+                            </div>
+                            <div class="htl-info p-3">
+                                <a href="http://thegrandhotelbd.com/" target="_blank">
+                                    <h3>The Grand Hotel</h3>
+                                </a>
+                                <div class="rating d-flex justify-content-between">
+                              <span class="d-flex justify-content-center align-items-center">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                  <i class="far fa-star"></i>
+                                  <a><b>(3.6/5)</b></a>
+                              </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-htl">
+                            <div class="thumb">
+                                <img src="img/noorjahan.jpg"class="img-fluid"alt="">
+                                <i class="price">£££</i>
+                            </div>
+                            <div class="htl-info p-3">
+                                <a href="https://www.noorjahangrand.com/" target="_blank">
+                                    <h3>Hotel Noorjahan Grand</h3>
+                                </a>
+                                <div class="rating d-flex justify-content-between">
+                              <span class="d-flex justify-content-center align-items-center">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                  <a><b>(4.3/5)</b></a>
+                              </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-htl">
+                            <div class="thumb">
+                                <img src="img/bottomhill.jpg"class="img-fluid"alt="">
+                                <i class="price">£££</i>
+                            </div>
+                            <div class="htl-info p-3">
+                                <a href="https://www.facebook.com/pages/category/Hotel/BottomhillPalace-1908772076073386/" target="_blank">
+                                    <h3>Bottomhill Palace Hotel</h3>
+                                </a>
+                                <div class="rating d-flex justify-content-between">
+                              <span class="d-flex justify-content-center align-items-center">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                  <a><b>(4.2/5)</b></a>
+                              </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-htl">
+                            <div class="thumb">
+                                <img src="img/nirvana.jpg"class="img-fluid"alt="">
+                                <i class="price">£££</i>
+
+                            </div>
+                            <div class="htl-info p-3">
+                                <a href="https://www.facebook.com/HotelNirvanaInn/" target="_blank">
+                                    <h3>Nirvana Inn</h3>
+                                </a>
+                                <div class="rating d-flex justify-content-between">
+                              <span class="d-flex justify-content-center align-items-center">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                  <a><b>(4.2/5)</b></a>
+                              </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-htl">
+                            <div class="thumb">
+                                <img src="img/supreme.jpg"class="img-fluid"alt="">
+                                <i  href="#"class="price">££</i>
+                            </div>
+                            <div class="htl-info p-3">
+                                <a href="http://www.hotelsupreme.net/" target="_blank">
+                                    <h3>Hotel Supreme</h3>
+                                </a>
+                                <div class="rating d-flex justify-content-between">
+                              <span class="d-flex justify-content-center align-items-center">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                  <i class="far fa-star"></i>
+                                  <a><b>(3.7/5)</b></a>
+                              </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-htl">
+                            <div class="thumb">
+                                <img src="img/metro.jpg"class="img-fluid"alt="">
+                                <i class="price">££</i>
+                            </div>
+                            <div class="htl-info p-3">
+                                <a href="https://www.hotelmetrointl.com/" target="_blank">
+                                    <h3>Hotel Metro International</h3>
+                                </a>
+                                <div class="rating d-flex justify-content-between">
+                              <span class="d-flex justify-content-center align-items-center">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                  <i class="far fa-star"></i>
+                                  <a><b>(3.8/5)</b></a>
+                              </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------>
+                    
+                </div>
+                <!-- <div class="row">
+                    <div class="col-lg-12">
+                        <div class="btn-hist text-center ">
+                          <div><a href="#" class="btn btn-hotel">More Hotels</a></div>
+                        </div>
+                    </div>
+                </div> -->
+                
+            </div>
+        </div>
+    </section>
+    <!---End of hotels Section-->
+       <!-- --Contact-- -->
+        <div class="mt-5" id="contact">
+            <div class="text-center">
+                <h1>Contact Us</h1>
+            </div>
+                <div class="Contact-form py-4 my-3">
+                    <p>Get In Touch</p>
+                    <form  class= " contactForm"action="contact.php" method="POST">
+                        <div class="NameInput">
+                            <input type="text" name="name" id="name" placeholder="Enter Your Name" class="form-control">
+                        </div>
+                        <div class="EmailInput">
+                            <input type="email" name="email" id="email" placeholder="Enter Your email" class="form-control">
+                        </div>
+                        <div class="TextInput">
+                            <textarea name="comment" id="comment" cols="30" rows="5" class="form-control" placeholder="Enter Your Comments"></textarea>
+                        </div>
+                        <div class="btn-submit text-center"  type="submit">
+                            <input type="submit" value="Submit" class="">
+                        </div>
+                    </form>
+                </div>    
+        </div>
+    <!-- End of Contact -->
+    <!-- photo gallery -->
+    <section class="photos mt-5 mb-5" id="gallery">
+        <div class="container-fluid">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-md-7 text-center">
+                    <h1>Photo Gallery</h1>
+                </div>
+            </div>
+            <div class="row no-gutters ">
+                <div class="col-sm-12 col-md">
+                    <img src="img/i1.jpg"class="img-fluid">
+                </div>
+                <!----->
+                <div class="col-sm-12 col-md">
+                    <img src="img/i3.jpg"class="img-fluid">
+                </div>
+                <!----->
+                <div class="col-sm-12 col-md">
+                    <img src="img/i4.jpg"class="img-fluid">
+                </div>
+                <!----->
+                <div class="col-sm-12 col-md">
+                    <img src="img/i7.jpg"class="img-fluid">
+                </div>
+                <!----->
+                <div class="col-sm-12 col-md">
+                    <img src="img/i9.jpg"class="img-fluid">
+                </div>
+                <!----->
+                <div class="col-sm-12 col-md">
+                    <img src="img/i10.jpg"class="img-fluid">
+                </div>
+                <!----->
+                <div class="col-sm-12 col-md">
+                    <img src="img/i2.jpg"class="img-fluid">
+                </div>
+                <!----->
+            </div>
+        </div>
+    </section>
+    <!-- End of photo gallery -->
+           <!-- footer -->
+           <div id="footer">
+            <div class="row container m-auto py-2">
+                <!-- ---- -->
+                <div class="col-md-6">
+                    <div class="footer-logo">
+                        <div class="Logo mb-4">
+                            <h1 style="color: #fff;"> 
+                                <i class="fas fa-plane-departure" style="font-size: 30px;"></i> Travellers</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- ---- -->
+                <div class="col-md-3">
+                    <h3 style="color: #fff;;"><b>Address</b></h3>
+                    <div style="color: #fff;">
+                        <div class="address">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span> Metropolitan Area<br>
+                                Bateshwar,Sylhet <br></span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone"></span>
+                            <span>+8801712345678</span>
+                        </div>
+                        <div class="mail">
+                            <span class="fas fa-envelope"></span>
+                            <span>travelers@example.com</span>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-md-3">
+                    <div class="short-links">
+                        <div>
+                            <h3 style="color: #fff;"><b>Short Links</b></h3>
+                        </div> 
+                        <div class="footer-links">
+                            <ul style="color: #fff;">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#service">Service</a></li>
+                                <li><a href="#about">About us</a></li>
+                                <li><a href="#contact">Contact us</a></li>
+                            </ul>
+                        </div>    
+                    </div>
+                </div>
+                <!-- --- -->
+            </div>
+        </div>
+        <!-- End of footer -->
+</body>
+</html>
